@@ -19,19 +19,20 @@ tabBtn.addEventListener("click", function () {
 })
 
 function render(leads) {
-    let listItems = ""
+    let uniqueLeads = new Set(leads);
+    let listItems = "";
 
-    for (let i = 0; i < leads.length; i++) {
+    for (let lead of uniqueLeads) {
         listItems += `
-                <li>
-                     <a target='_blank' href='${leads[i]}'>
-                        ${leads[i]}
-                        </a>
-                </li>
-`
+            <li>
+                <a target='_blank' href='${lead}'>
+                    ${lead}
+                </a>
+            </li>
+        `;
     }
 
-    ulEl.innerHTML = listItems
+    ulEl.innerHTML = listItems;
 }
 
 deleteBtn.addEventListener("dblclick", function () {
