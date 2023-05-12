@@ -40,9 +40,13 @@ deleteBtn.addEventListener("dblclick", function () {
     myLeads = []
     render(myLeads)
 })
+
 inputBtn.addEventListener('click', function () {
-    myLeads.push(inputEl.value)
-    inputEl.value = ""
-    localStorage.setItem("myLeads", JSON.stringify(myLeads))
-    render(myLeads)
-})
+    let lead = inputEl.value.trim().replace(/\s+/g, '');
+    if (lead !== "") {
+        myLeads.push(lead);
+        inputEl.value = "";
+        localStorage.setItem("myLeads", JSON.stringify(myLeads));
+        render(myLeads);
+    }
+});
