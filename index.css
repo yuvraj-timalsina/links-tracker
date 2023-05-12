@@ -17,7 +17,10 @@ input:focus {
     border:1px solid #2962ff;
     box-shadow: 0 0 2px #2962ff;
 }
-
+#error-msg {
+    color: #ff0000;
+    margin-top: 5px;
+}
 button {
     background: #2962ff;
     color: white;

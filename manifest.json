@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "version": "1.0",
   "name": "Links Tracker",
-  "description": "Track Your Important Links.",
+  "description": "Easily streamline your web browsing with this user-friendly links tracking extension. Say goodbye to the frustration of lost links forever.",
   "icons": {
     "16": "icon.png",
     "32": "icon.png",
@@ -13,7 +13,7 @@
     "default_popup": "index.html",
     "default_icon": "icon.png"
   },
-  "permissions" : [
+  "permissions": [
     "tabs"
   ]
 }
