@@ -4,7 +4,6 @@
 Track Your Important Links
 
 
-
 ## Initial Setup
 
 Download the zip file or clone the repo.
@@ -25,7 +24,6 @@ Open chrome browser and search :
 
 ```
 chrome://extensions
-
 ```
 - Enable Developer mode switch
 - Click on Load unpacked
