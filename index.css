@@ -10,7 +10,7 @@ input {
     padding: 10px;
     box-sizing: border-box;
     border: 1px solid #2962ff;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }
 input:focus {
     outline: none !important;

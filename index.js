@@ -2,8 +2,9 @@
 let myLinks = [];
 let errorMsg = document.getElementById("error-msg")
 const inputEl = document.getElementById('input-el');
-const inputBtn = document.getElementById('input-btn');
+const inputBtn = document.getElementById('save-btn');
 const ulEl = document.getElementById("ul-el");
+const tabBtn = document.getElementById("tab-btn")
 const deleteBtn = document.getElementById("delete-btn");
 
 // Get any links stored in local storage and render them on the page if they exist
@@ -54,7 +55,7 @@ deleteBtn.addEventListener("dblclick", function () {
     render(myLinks);
 });
 
-// Event listener for the "input-btn" button to add a new link to the links array and local storage, and render the updated list on the page
+// Event listener for the "save-btn" button to add a new link to the links array and local storage, and render the updated list on the page
 inputBtn.addEventListener('click', function () {
     const url = inputEl.value.trim().replace(/\s+/g, '');
     // If the input is empty, display an error message
