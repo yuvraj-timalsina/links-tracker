@@ -2,6 +2,13 @@
   "manifest_version": 3,
   "version": "1.0",
   "name": "Leads Tracker",
+  "description": "Extension to keep track of your Leads.",
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
   "action": {
     "default_popup": "index.html",
     "default_icon": "icon.png"

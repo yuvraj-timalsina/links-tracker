@@ -9,21 +9,22 @@ input {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    border: 1px solid #5f9341;
+    border: 1px solid #2962ff;
     margin-bottom: 4px;
 }
 
 button {
-    background: #5f9341;
+    background: #2962ff;
     color: white;
     padding: 10px 20px;
-    border: 1px solid #5f9341;
+    border: 1px solid #2962ff;
     font-weight: bold;
+    cursor: pointer;
 }
 
 #delete-btn {
     background: white;
-    color: #5f9341
+    color: #2962ff
 }
 
 ul {
@@ -37,5 +38,5 @@ li {
 }
 
 a {
-    color: #5f9341;
+    color: #2962ff;
 }
