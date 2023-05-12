@@ -6,9 +6,9 @@ Track Your Important Links
 
 ## Initial Setup
 
-Download the zip file or clone the repo.
+Download the zip file or clone the repo
 
-```bash
+```
 git@github.com:yuvraj-timalsina/links-tracker.git
 ```
     
@@ -20,7 +20,7 @@ Place the files in your preferred directory and unzip it.
 
 ## Installation
 
-Open chrome browser and search :
+Open chrome browser and search
 
 ```
 chrome://extensions
