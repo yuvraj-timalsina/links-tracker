@@ -12,6 +12,11 @@ input {
     border: 1px solid #2962ff;
     margin-bottom: 4px;
 }
+input:focus {
+    outline: none !important;
+    border:1px solid #2962ff;
+    box-shadow: 0 0 2px #2962ff;
+}
 
 button {
     background: #2962ff;
@@ -22,9 +27,18 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background: white;
+    color: #2962ff;
+}
+
 #delete-btn {
     background: white;
     color: #2962ff
+}
+#delete-btn:hover {
+    background: #2962ff;
+    color: white
 }
 
 ul {

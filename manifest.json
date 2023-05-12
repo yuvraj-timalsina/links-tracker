@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "version": "1.0",
-  "name": "Leads Tracker",
-  "description": "Extension to keep track of your Leads.",
+  "name": "Links Tracker",
+  "description": "Track Your Important Links.",
   "icons": {
     "16": "icon.png",
     "32": "icon.png",

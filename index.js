@@ -1,32 +1,32 @@
-let myLeads = []
+let myLinks = []
 const inputEl = document.getElementById('input-el')
 const inputBtn = document.getElementById('input-btn')
 const ulEl = document.getElementById("ul-el")
 const deleteBtn = document.getElementById("delete-btn")
-const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
+const linksFromLocalStorage = JSON.parse(localStorage.getItem("myLinks"))
 const tabBtn = document.getElementById("tab-btn")
 
-if (leadsFromLocalStorage) {
-    myLeads = leadsFromLocalStorage
-    render(myLeads)
+if (linksFromLocalStorage) {
+    myLinks = linksFromLocalStorage
+    render(myLinks)
 }
 tabBtn.addEventListener("click", function () {
     chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
-        myLeads.push(tabs[0].url)
-        localStorage.setItem("myLeads", JSON.stringify(myLeads))
-        render(myLeads)
+        myLinks.push(tabs[0].url)
+        localStorage.setItem("myLinks", JSON.stringify(myLinks))
+        render(myLinks)
     })
 })
 
-function render(leads) {
-    let uniqueLeads = new Set(leads);
+function render(links) {
+    let uniqueLinks = new Set(links);
     let listItems = "";
 
-    for (let lead of uniqueLeads) {
+    for (let link of uniqueLinks) {
         listItems += `
             <li>
-                <a target='_blank' href='${lead}'>
-                    ${lead}
+                <a target='_blank' href='${link}'>
+                    ${link}
                 </a>
             </li>
         `;
@@ -37,16 +37,16 @@ function render(leads) {
 
 deleteBtn.addEventListener("dblclick", function () {
     localStorage.clear()
-    myLeads = []
-    render(myLeads)
+    myLinks = []
+    render(myLinks)
 })
 
 inputBtn.addEventListener('click', function () {
-    let lead = inputEl.value.trim().replace(/\s+/g, '');
-    if (lead !== "") {
-        myLeads.push(lead);
+    let link = inputEl.value.trim().replace(/\s+/g, '');
+    if (link !== "") {
+        myLinks.push(link);
         inputEl.value = "";
-        localStorage.setItem("myLeads", JSON.stringify(myLeads));
-        render(myLeads);
+        localStorage.setItem("myLinks", JSON.stringify(myLinks));
+        render(myLinks);
     }
 });
