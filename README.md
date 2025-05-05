@@ -8,7 +8,7 @@ Track Your Important Links
 Download the zip file or clone the repo
 
 ```
-git@github.com:yuvraj-timalsina/links-tracker.git
+git clone git@github.com:yuvraj-timalsina/links-tracker.git
 ```
     
 ## Run Locally
